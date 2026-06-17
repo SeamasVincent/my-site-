@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-family-jakarta: 'Plus Jakarta Sans', sans-serif;
+  --font-family-newsreader: 'Newsreader', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FCFBF8;
+  color: #0A1931;
+  overflow-x: hidden;
+}
