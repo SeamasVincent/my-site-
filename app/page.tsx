@@ -23,69 +23,89 @@ export default function Home() {
         className="fixed bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-[#FFBF00] rounded-full blur-[150px] -z-10 pointer-events-none"
       />
 
-      {/* ══════════════════════════════════════
-          SECTION 1 — HERO
-      ══════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-6 py-20 md:py-32 flex flex-col-reverse md:flex-row items-center gap-16">
+{/* ══════════════════════════════════════
+    SECTION 1 — HERO
+══════════════════════════════════════ */}
+<section className="max-w-7xl mx-auto px-6 py-20 md:py-32">
 
-        {/* Copy */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeUp}
-          className="w-full md:w-1/2 flex flex-col gap-8"
+  {/* Mobile layout: headline → image → body → CTA */}
+  {/* Desktop layout: two columns side by side */}
+  <div className="flex flex-col md:flex-row md:items-center gap-12 md:gap-16">
+
+    {/* LEFT: Copy — on mobile this splits around the image */}
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeUp}
+      className="w-full md:w-1/2 flex flex-col gap-6 md:gap-8"
+    >
+      {/* Amber divider */}
+      <div className="w-12 h-[3px] bg-[#FFBF00] rounded-full" />
+
+      {/* Headline — shows first on both mobile and desktop */}
+      <h1 className="font-jakarta font-bold text-4xl md:text-6xl leading-[1.1] tracking-tight text-[#0A1931]">
+        You know how to build a product. I will show you how to build the business that houses it.
+      </h1>
+
+      {/* Portrait — only visible on mobile, sits between headline and body */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.92 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: 'easeOut' }}
+        className="md:hidden w-full flex justify-center"
+      >
+        <div className="w-full max-w-xs aspect-[4/5] relative">
+          <img
+            src="/portrait.svg"
+            alt="Seamas Vincent"
+            className="object-contain w-full h-full"
+          />
+        </div>
+      </motion.div>
+
+      {/* Body copy */}
+      <p className="font-newsreader text-xl md:text-2xl leading-relaxed text-[#0A1931]/80">
+        I am Seamas Vincent, business development consultant and entrepreneur. I work with early-stage Nigerian founders to build structurally sound businesses. Businesses that satisfy customers, stay profitable, and scale without breaking.
+      </p>
+
+      {/* CTAs */}
+      <div className="flex flex-col sm:flex-row gap-4 pt-2">
+        <motion.a
+          whileHover={{ scale: 1.02, boxShadow: '0 12px 32px rgba(255,191,0,0.35)' }}
+          whileTap={{ scale: 0.98 }}
+          href="INSERT_SELAR_LINK_HERE"
+          className="bg-[#FFBF00] text-[#0A1931] font-jakarta font-bold text-lg px-8 py-4 rounded-full text-center shadow-lg shadow-[#FFBF00]/20"
         >
-          {/* Amber divider — anchors the section visually */}
-          <div className="w-12 h-[3px] bg-[#FFBF00] rounded-full" />
-
-          <h1 className="font-jakarta font-bold text-5xl md:text-6xl leading-[1.1] tracking-tight text-[#0A1931]">
-            A great product deserves a great business.
-          </h1>
-
-          <p className="font-newsreader text-xl md:text-2xl leading-relaxed text-[#0A1931]/80">
-           Hi, I am Seamas Vincent, business consultant, educator and entrepreneur. For years I have worked with Nigerian founders across for-profit and non-profit organisations, helping them build businesses that are built to last and ready to grow.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <motion.a
-              whileHover={{ scale: 1.02, boxShadow: '0 12px 32px rgba(255,191,0,0.35)' }}
-              whileTap={{ scale: 0.98 }}
-              href="https://selar.com/y870581q2e"
-              className="bg-[#FFBF00] text-[#0A1931] font-jakarta font-bold text-lg px-8 py-4 rounded-full text-center shadow-lg shadow-[#FFBF00]/20"
-            >
-              Get The Workbook — ₦7,500
-            </motion.a>
-            <motion.a
-              whileHover={{ backgroundColor: '#E8F1F8' }}
-              href="#consulting"
-              className="border border-[#0A1931] text-[#0A1931] font-jakarta font-bold text-lg px-8 py-4 rounded-full text-center transition-colors"
-            >
-              Book a Clarity Session
-            </motion.a>
-          </div>
-        </motion.div>
-
-        {/* Portrait */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
-          className="w-full md:w-1/2 flex justify-center"
+          Get The Workbook — ₦7,500
+        </motion.a>
+        <motion.a
+          whileHover={{ backgroundColor: '#E8F1F8' }}
+          href="#consulting"
+          className="border border-[#0A1931] text-[#0A1931] font-jakarta font-bold text-lg px-8 py-4 rounded-full text-center transition-colors"
         >
-          <div className="w-full max-w-lg aspect-[4/5] relative">
-            <img
-              src="/FSH.png"
-              alt="Seamas Vincent"
-              className="object-cover w-full h-full"
-            />
-            {/* Fallback shown only when image is missing */}
-            <div className="absolute inset-0 flex items-center justify-center font-jakarta text-xs text-[#0A1931]/30 tracking-widest uppercase">
-              Portrait
-            </div>
-          </div>
-        </motion.div>
-      </section>
+          Book a Clarity Session
+        </motion.a>
+      </div>
+    </motion.div>
 
+    {/* RIGHT: Portrait — only visible on desktop */}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.92 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1, ease: 'easeOut' }}
+      className="hidden md:flex w-full md:w-1/2 justify-center"
+    >
+      <div className="w-full max-w-lg aspect-[4/5] relative">
+        <img
+          src="/portrait.svg"
+          alt="Seamas Vincent"
+          className="object-contain w-full h-full"
+        />
+      </div>
+    </motion.div>
+
+  </div>
+</section>
       {/* ══════════════════════════════════════
           SECTION 2 — THE ECOSYSTEM
       ══════════════════════════════════════ */}
