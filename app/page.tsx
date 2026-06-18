@@ -49,19 +49,19 @@ export default function Home() {
 
       {/* Portrait — only visible on mobile, sits between headline and body */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.92 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: 'easeOut' }}
-        className="md:hidden w-full flex justify-center"
-      >
-        <div className="w-full max-w-xs aspect-[4/5] relative">
-          <img
-            src="/FSH.png"
-            alt="Seamas Vincent"
-            className="object-contain w-full h-full"
-          />
-        </div>
-      </motion.div>
+  initial={{ opacity: 0, scale: 0.92 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, ease: 'easeOut' }}
+  className="md:hidden w-full flex justify-center"
+>
+  <div className="w-full max-w-sm aspect-[4/5] relative bg-[#E8F1F8] rounded-3xl overflow-hidden shadow-xl">
+    <img
+      src="/portrait.svg"
+      alt="Seamas Vincent"
+      className="object-cover w-full h-full"
+    />
+  </div>
+</motion.div>
 
       {/* Body copy */}
       <p className="font-newsreader text-xl md:text-2xl leading-relaxed text-[#0A1931]/80">
@@ -90,19 +90,19 @@ export default function Home() {
 
     {/* RIGHT: Portrait — only visible on desktop */}
     <motion.div
-      initial={{ opacity: 0, scale: 0.92 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1, ease: 'easeOut' }}
-      className="hidden md:flex w-full md:w-1/2 justify-center"
-    >
-      <div className="w-full max-w-lg aspect-[4/5] relative">
-        <img
-          src="/FSH.png"
-          alt="Seamas Vincent"
-          className="object-contain w-full h-full"
-        />
-      </div>
-    </motion.div>
+  initial={{ opacity: 0, scale: 0.92 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1, ease: 'easeOut' }}
+  className="hidden md:flex w-full md:w-1/2 justify-center"
+>
+  <div className="w-full max-w-xl aspect-[4/5] relative bg-[#E8F1F8] rounded-3xl overflow-hidden shadow-xl">
+    <img
+      src="/portrait.svg"
+      alt="Seamas Vincent"
+      className="object-cover w-full h-full"
+    />
+  </div>
+</motion.div>
 
   </div>
 </section>
