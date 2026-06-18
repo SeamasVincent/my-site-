@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* Headline — shows first on both mobile and desktop */}
       <h1 className="font-jakarta font-bold text-4xl md:text-6xl leading-[1.1] tracking-tight text-[#0A1931]">
-        You know how to build a product. I will show you how to build the business that houses it.
+        A great product deserves a great business.
       </h1>
 
       {/* Portrait — only visible on mobile, sits between headline and body */}
@@ -56,7 +56,7 @@ export default function Home() {
       >
         <div className="w-full max-w-xs aspect-[4/5] relative">
           <img
-            src="/portrait.svg"
+            src="/FSH.png"
             alt="Seamas Vincent"
             className="object-contain w-full h-full"
           />
@@ -65,7 +65,7 @@ export default function Home() {
 
       {/* Body copy */}
       <p className="font-newsreader text-xl md:text-2xl leading-relaxed text-[#0A1931]/80">
-        I am Seamas Vincent, business development consultant and entrepreneur. I work with early-stage Nigerian founders to build structurally sound businesses. Businesses that satisfy customers, stay profitable, and scale without breaking.
+       Hi, I am Seamas Vincent, business consultant, educator and entrepreneur. For years I have worked with Nigerian founders across for-profit and non-profit organisations, helping them build businesses that are built to last and ready to grow.
       </p>
 
       {/* CTAs */}
@@ -73,7 +73,7 @@ export default function Home() {
         <motion.a
           whileHover={{ scale: 1.02, boxShadow: '0 12px 32px rgba(255,191,0,0.35)' }}
           whileTap={{ scale: 0.98 }}
-          href="INSERT_SELAR_LINK_HERE"
+          href="https://selar.com/y870581q2e"
           className="bg-[#FFBF00] text-[#0A1931] font-jakarta font-bold text-lg px-8 py-4 rounded-full text-center shadow-lg shadow-[#FFBF00]/20"
         >
           Get The Workbook — ₦7,500
@@ -97,7 +97,7 @@ export default function Home() {
     >
       <div className="w-full max-w-lg aspect-[4/5] relative">
         <img
-          src="/portrait.svg"
+          src="/FSH.png"
           alt="Seamas Vincent"
           className="object-contain w-full h-full"
         />
