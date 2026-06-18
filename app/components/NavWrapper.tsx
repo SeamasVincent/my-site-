@@ -16,7 +16,7 @@ export default function NavWrapper() {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#FCFBF8]/90 backdrop-blur-md border-b border-[#0A1931]/5 shadow-sm' : 'bg-transparent border-b border-transparent'}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center flex-shrink-0">
-          <img src="/logo.svg" alt="Seamas Vincent" className="h-8 w-auto max-w-[160px] object-contain block" onError={(e) => (e.currentTarget.style.display = 'none')} />
+          <img src="/logo.svg" alt="Seamas Vincent" className="h-10 w-auto object-contain block" onError={(e) => (e.currentTarget.style.display = 'none')} />
         </div>
         <div className="hidden md:flex gap-8 font-jakarta text-sm font-medium">
           <a href="#ecosystem" className="hover:text-[#FFBF00] transition-colors">The Ecosystem</a>

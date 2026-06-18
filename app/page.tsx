@@ -97,7 +97,7 @@ export default function Home() {
 >
   <div className="w-full max-w-xl aspect-[4/5] relative bg-[#E8F1F8] rounded-3xl overflow-hidden shadow-xl">
     <img
-      src="//FSH.png"
+      src="/FSH.png"
       alt="Seamas Vincent"
       className="object-cover w-full h-full"
     />
