@@ -370,7 +370,7 @@ export default function Home() {
             <motion.a
               whileHover={{ backgroundColor: '#FFBF00', color: '#0A1931', scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              href="https://www.sokedigital.com/book-call"
+              href="https://selar.com/183538732c"
               className="mt-4 bg-[#0A1931] text-[#FCFBF8] font-jakarta font-bold text-xl px-10 py-5 rounded-full shadow-xl transition-colors duration-300"
             >
               Book a Clarity Session
