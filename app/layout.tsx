@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import NavWrapper from './components/NavWrapper';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Seamas Vincent | Build Intelligently',
@@ -10,22 +11,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYPK6GSGGF"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
+      <body className="bg-[#FCFBF8] text-[#0A1931] font-newsreader antialiased relative">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FYPK6GSGGF"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-FYPK6GSGGF');
-          `
-        }} />
-      </head>
-      <body className="bg-[#FCFBF8] text-[#0A1931] font-newsreader antialiased relative">
+          `}
+        </Script>
         <NavWrapper />
         {children}
 
-        {/* Global Footer */}
         <footer className="bg-[#0A1931] text-[#FCFBF8] py-12">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="font-jakarta text-sm opacity-60">© 2026 Seamas Vincent. All rights reserved.</p>
