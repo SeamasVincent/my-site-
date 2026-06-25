@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import NavWrapper from './components/NavWrapper';
+
 export const metadata: Metadata = {
   title: 'Seamas Vincent | Build Intelligently',
   description: 'Structurally sound business models for African founders.',
@@ -9,6 +10,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYPK6GSGGF"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FYPK6GSGGF');
+          `
+        }} />
+      </head>
       <body className="bg-[#FCFBF8] text-[#0A1931] font-newsreader antialiased relative">
         <NavWrapper />
         {children}
