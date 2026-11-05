@@ -1,0 +1,5 @@
+import { OutlineLink, PageIntro, CopyParagraphs } from '../components/site';
+import { Form } from '../components/site-client';
+import settings from '../../content/site-settings.json';
+export const metadata = { title: 'Contact', description: 'Contact Seamas Vincent for collaborations, media requests and general enquiries.', alternates: { canonical: '/contact' } };
+export default function Contact() { return <main><PageIntro kicker="Contact" title="Let’s connect." photo="contactHeroPhoto"><CopyParagraphs paragraphs={settings.contactIntroduction} /></PageIntro><section className="section container form-layout contact-layout"><div className="prose"><h2>Start a conversation.</h2><p>Planning a speaking engagement or workshop?</p><OutlineLink href="/speaking#enquiry">Visit Speaking & Workshops</OutlineLink><p>For business strategy and go-to-market support:</p><OutlineLink href={settings.sokeUrl}>Discover SỌKẸ Africa</OutlineLink><p className="form-note">Please allow {settings.responseTimeText} for a response.</p></div><Form kind="contact" /></section></main>; }

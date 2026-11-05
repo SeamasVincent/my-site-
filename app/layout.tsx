@@ -1,44 +1,19 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import NavWrapper from './components/NavWrapper';
-import Script from 'next/script';
+import { Footer } from './components/site';
+import { Header } from './components/site-client';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://seamas.sokeafrica.com';
 export const metadata: Metadata = {
-  title: 'Seamas Vincent | Build Intelligently',
-  description: 'Structurally sound business models for African founders.',
+  metadataBase: new URL(siteUrl),
+  title: { default: 'Seamas Vincent | Building businesses. Shaping how we build.', template: '%s | Seamas Vincent' },
+  description: 'Seamas Vincent is a builder, business educator, speaker and creative based in Abuja, Nigeria. Explore his work, ideas and resources.',
+  openGraph: { type: 'website', locale: 'en_NG', url: '/', siteName: 'Seamas Vincent', title: 'Seamas Vincent', description: 'Building businesses. Shaping how we build.' },
+  twitter: { card: 'summary_large_image', title: 'Seamas Vincent', description: 'Building businesses. Shaping how we build.' },
+  robots: { index: true, follow: true },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
-      <body className="bg-[#FCFBF8] text-[#0A1931] font-newsreader antialiased relative">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-FYPK6GSGGF"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-FYPK6GSGGF');
-          `}
-        </Script>
-        <NavWrapper />
-        {children}
-
-        <footer className="bg-[#0A1931] text-[#FCFBF8] py-12">
-          <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-            <p className="font-jakarta text-sm opacity-60">© 2026 Seamas Vincent. All rights reserved.</p>
-            <div className="flex gap-6 font-jakarta text-sm opacity-60">
-              <a href="https://www.instagram.com/consultseamas/" className="hover:text-[#FFBF00] hover:opacity-100 transition-colors">Instagram</a>
-              <a href="mailto:consultseamas@gmail.com" className="hover:text-[#FFBF00] hover:opacity-100 transition-colors">Email</a>
-              <a href="#" className="hover:text-[#FFBF00] hover:opacity-100 transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-[#FFBF00] hover:opacity-100 transition-colors">Privacy Policy</a>
-            </div>
-          </div>
-        </footer>
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const person = { '@context': 'https://schema.org', '@type': 'Person', name: 'Seamas Vincent', url: siteUrl, jobTitle: ['Builder', 'Business educator', 'Speaker', 'Creative'], address: { '@type': 'PostalAddress', addressLocality: 'Abuja', addressCountry: 'NG' }, worksFor: { '@type': 'Organization', name: 'SỌKẸ Africa', url: 'https://sokeafrica.com/' } };
+  return <html lang="en"><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person).replace(/</g, '\\u003c') }} /><Header />{children}<Footer /></body></html>;
 }

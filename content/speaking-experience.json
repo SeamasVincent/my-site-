@@ -1,0 +1,7 @@
+{ "items": [
+  { "id": "cci-mararaba-algorithm-conference", "role": "Facilitator for the business panel session, Scaling Without Breaking.", "title": "CCI Mararaba Algorithm Conference", "type": "Panel facilitation", "date": "", "photo": "", "photoAlt": "", "focalX": 50, "focalY": 50 },
+  { "id": "cinema-in-your-pocket-creator-jesse", "role": "Taught Business in Content Creation, the workshop’s business module.", "title": "Cinema in Your Pocket, by Creator Jesse", "type": "Workshop teaching", "date": "", "photo": "", "photoAlt": "", "focalX": 50, "focalY": 50 },
+  { "id": "from-hustle-to-structure", "role": "Hosted and taught a webinar on business structuring.", "title": "From Hustle to Structure", "type": "Webinar", "date": "2025", "photo": "", "photoAlt": "", "focalX": 50, "focalY": 50 },
+  { "id": "financial-management-business-owners", "role": "Hosted and taught a webinar on understanding and managing business finances.", "title": "Financial Management for Business Owners", "type": "Webinar", "date": "2025", "photo": "", "photoAlt": "", "focalX": 50, "focalY": 50 },
+  { "id": "fuse-varsity-cohort-8", "role": "Capstone project judge. This was a judging role, not a speaking engagement.", "title": "FUSE Varsity, Cohort 8", "type": "Judging", "date": "2026", "photo": "", "photoAlt": "", "focalX": 50, "focalY": 50 }
+] }

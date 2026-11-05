@@ -1,0 +1,260 @@
+local_backend: true
+backend:
+  name: github
+  repo: SeamasVincent/my-site-
+  branch: main
+  base_url: https://YOUR-OAUTH-HOST
+  auth_endpoint: auth
+  use_graphql: true
+media_folder: public/uploads
+public_folder: /uploads
+locale: en
+slug:
+  encoding: unicode
+  clean_accents: true
+  sanitize_replacement: '-'
+collections:
+  - name: insights
+    label: Insights
+    label_singular: Insight
+    folder: content/insights
+    create: true
+    extension: json
+    format: json
+    slug: '{{slug}}'
+    summary: '{{type}} · {{title}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Previous slugs (for redirects), name: previousSlugs, widget: list, required: false }
+      - { label: Content type, name: type, widget: select, options: [article, video, podcast] }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Thumbnail, name: image, widget: image, required: false }
+      - { label: Image description, name: imageAlt, widget: string, required: false }
+      - { label: Thumbnail focal X (0–100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+      - { label: Thumbnail focal Y (0–100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+      - { label: Published date, name: publishedAt, widget: datetime, time_format: false, required: false }
+      - { label: Article body (full text; paragraphs separated by blank lines), name: body, widget: text, required: false }
+      - { label: YouTube or Spotify link, name: platformUrl, widget: string, required: false }
+      - { label: Platform name, name: platformName, widget: string, required: false }
+      - { label: Additional information, name: notes, widget: text, required: false }
+      - label: Related links
+        name: relatedLinks
+        widget: list
+        required: false
+        fields:
+          - { label: Label, name: label, widget: string }
+          - { label: URL (HTTPS), name: url, widget: string }
+  - name: resources
+    label: Resources
+    label_singular: Resource
+    folder: content/resources
+    create: true
+    extension: json
+    format: json
+    slug: '{{slug}}'
+    summary: '{{type}} · {{title}}'
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Stable slug, name: slug, widget: string }
+      - { label: Resource type, name: type, widget: select, options: [Book, Guide, Template, Workbook, Other] }
+      - { label: Short description, name: description, widget: text }
+      - { label: Resource details, name: details, widget: text, required: false }
+      - { label: Publish date, name: publishedAt, widget: datetime, time_format: false, required: false }
+      - { label: Picture, name: picture, widget: image, required: false }
+      - { label: Picture alternative text, name: pictureAlt, widget: string, required: false }
+      - { label: File, name: file, widget: file, required: false }
+      - { label: Link, name: link, widget: string, required: false }
+      - { label: Link label, name: linkLabel, widget: string, required: false }
+      - { label: Checkout link, name: checkoutLink, widget: string, required: false }
+  - name: settings
+    label: Site settings
+    files:
+      - name: site
+        label: Site links and photographs
+        file: content/site-settings.json
+        format: json
+        fields:
+          - { label: Homepage name, name: heroName, widget: string }
+          - { label: Homepage headline, name: heroHeadline, widget: text, hint: Use a line break to separate the two lines. }
+          - { label: Homepage role line, name: heroRole, widget: string }
+          - { label: Homepage introduction paragraphs, name: heroParagraphs, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Homepage personal introduction heading, name: homeAboutHeading, widget: string }
+          - { label: About page opening paragraphs, name: aboutIntroduction, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Speaking page opening paragraphs, name: speakingIntroduction, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Mission page opening paragraphs, name: missionIntroduction, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Books page opening paragraphs, name: booksIntroduction, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Contact page opening paragraphs, name: contactIntroduction, widget: list, field: { label: Paragraph, name: paragraph, widget: text } }
+          - { label: Workbook Selar URL, name: workbookUrl, widget: string }
+          - { label: SỌKẸ Africa website URL, name: sokeUrl, widget: string }
+          - { label: Public response expectation, name: responseTimeText, widget: string }
+          - label: Social links
+            name: socialLinks
+            widget: object
+            fields:
+              - { label: Instagram URL, name: instagram, widget: string, required: false }
+              - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+              - { label: X / Twitter URL, name: x, widget: string, required: false }
+              - { label: YouTube URL, name: youtube, widget: string, required: false }
+          - label: Additional social links
+            name: additionalSocialLinks
+            widget: list
+            required: false
+            fields:
+              - { label: Platform name, name: platform, widget: string }
+              - { label: URL, name: url, widget: string }
+          - label: Hero portrait (supports transparent PNG)
+            name: heroPhoto
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0–100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0–100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: Personal introduction photograph
+            name: introPhoto
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: SÓKÈ Africa photograph
+            name: sokePhoto
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: Speaking photograph
+            name: speakingPhoto
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: About portrait
+            name: aboutPhoto
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: Creative practice photograph
+            name: creativePhoto
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: Workshop thumbnail
+            name: teachingThumbnail
+            widget: object
+            fields:
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: About hero photo
+            name: aboutHeroPhoto
+            widget: object
+            fields: &photo_fields
+              - { label: Image, name: image, widget: image, required: false }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
+          - label: Speaking hero photo
+            name: speakingHeroPhoto
+            widget: object
+            fields: *photo_fields
+          - label: Insights hero photo
+            name: insightsHeroPhoto
+            widget: object
+            fields: *photo_fields
+          - label: Books hero photo
+            name: booksHeroPhoto
+            widget: object
+            fields: *photo_fields
+          - label: Contact hero photo
+            name: contactHeroPhoto
+            widget: object
+            fields: *photo_fields
+          - label: Mission hero photo
+            name: missionHeroPhoto
+            widget: object
+            fields: *photo_fields
+          - label: Mission photos after impact figures
+            name: missionImpactPhotos
+            widget: list
+            required: false
+            fields: &gallery_fields
+              - { label: Image, name: image, widget: image }
+              - { label: Alternative text, name: alt, widget: string, required: false }
+              - { label: Caption, name: caption, widget: string, required: false }
+              - { label: Crop focal point X (0-100), name: focalX, widget: number, min: 0, max: 100, default: 50, required: false }
+              - { label: Crop focal point Y (0-100), name: focalY, widget: number, min: 0, max: 100, default: 50, required: false }
+          - label: Mission photos after How I contribute
+            name: missionContributionPhotos
+            widget: list
+            required: false
+            fields: *gallery_fields
+          - label: About story gallery
+            name: aboutPhotoGallery
+            widget: list
+            required: false
+            fields: *gallery_fields
+          - label: Speaking workshop photos
+            name: speakingWorkshopPhotos
+            widget: list
+            required: false
+            fields: *gallery_fields
+          - label: Speaking event gallery
+            name: speakingEventPhotos
+            widget: list
+            required: false
+            fields: *gallery_fields
+          - label: The work kept evolving photo
+            name: evolvingPhoto
+            widget: object
+            required: false
+            fields: *photo_fields
+          - label: What building has taught me photo
+            name: buildingPhoto
+            widget: object
+            required: false
+            fields: *photo_fields
+          - label: What I believe photo
+            name: beliefsPhoto
+            widget: object
+            required: false
+            fields: *photo_fields
+          - label: Building and teaching photo
+            name: teachingPhoto
+            widget: object
+            required: false
+            fields: *photo_fields
+  - name: experience
+    label: Speaking experience
+    files:
+      - name: engagements
+        label: Confirmed speaking and teaching experience
+        file: content/speaking-experience.json
+        format: json
+        fields:
+          - label: Engagements (keep roles and dates accurate)
+            name: items
+            widget: list
+            fields:
+              - { label: Stable ID (do not change), name: id, widget: string }
+              - { label: Event or programme title, name: title, widget: string }
+              - { label: Exact contribution / role, name: role, widget: text }
+              - { label: Category, name: type, widget: string }
+              - { label: Year (optional), name: date, widget: string, required: false }
+              - { label: Engagement photo, name: photo, widget: image, required: false }
+              - { label: Photo alt text, name: photoAlt, widget: string, required: false }
+              - { label: Photo focal point X (0-100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50, required: false }
+              - { label: Photo focal point Y (0-100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50, required: false }
