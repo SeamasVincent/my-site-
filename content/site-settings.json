@@ -104,8 +104,8 @@
   "heroPhoto": {
     "image": "/uploads/chatgpt-image-sep-12-2026-03_52_33-am.png",
     "alt": "",
-    "focalX": 50,
-    "focalY": 50
+    "focalX": 25,
+    "focalY": 25
   },
   "evolvingPhoto": {
     "image": "",
