@@ -1,52 +1,5 @@
 {
-  "workbookUrl": "https://selar.com/y870581q2e",
-  "sokeUrl": "https://sokeafrica.com/",
-  "responseTimeText": "3–5 business days",
-  "heroName": "Seamas Vincent",
-  "heroHeadline": "A wider view of what we build.\nRaising the next generation of stewards.",
-  "heroRole": "Speaker · Author · Entrepreneur",
-  "heroParagraphs": [
-    "A business carries more than its founder’s ambition. It carries livelihoods, opens doors and shapes what becomes possible for others.",
-    "I’m interested in the people we become as we build, the responsibility we carry, and what remains long after us."
-  ],
-  "homeAboutHeading": "A commercial mind. A creative perspective. An educator’s instinct.",
-  "aboutIntroduction": [
-    "I’m Seamas Vincent, a builder, business educator, speaker and creative based in Abuja, Nigeria.",
-    "Through SÓKÈ Africa, a professional services firm focused on go-to-market strategy and execution, I help companies enter new markets, reach new customers and expand their market share.",
-    "I also teach people how to approach entrepreneurship intelligently, through workshops, speaking, writing and the lessons I share from my own experience.",
-    "There have been a few lessons. Some were considerably more expensive than a course."
-  ],
-  "speakingIntroduction": [
-    "I speak and teach about sustainable business growth, impactful business practices and the thinking behind how we build.",
-    "My perspective comes from starting businesses, making mistakes, learning from them and working directly with entrepreneurs through SỌKẸ Africa.",
-    "I bring those experiences into conference talks, practical workshops, panel conversations and company training, helping people examine their assumptions and make more informed business decisions."
-  ],
-  "missionIntroduction": [
-    "I believe entrepreneurship can help people build better lives, strengthen communities and contribute to the development of nations.",
-    "A business creates an opportunity for its founder. As it grows, it can create opportunities for employees, suppliers, partners and other businesses around it.",
-    "That possibility is what draws me to this work.",
-    "It is why I build. It is why I teach. And it is why I care deeply about how businesses grow."
-  ],
-  "booksIntroduction": [
-    "Practical resources to help you examine your business, make informed decisions and apply what you learn.",
-    "Starting with Build Intelligently."
-  ],
-  "contactIntroduction": [
-    "For collaborations, media requests and general enquiries, tell me what you have in mind."
-  ],
-  "heroPhoto": {
-    "image": "",
-    "alt": "",
-    "focalX": 50,
-    "focalY": 50
-  },
-  "introPhoto": {
-    "image": "",
-    "alt": "",
-    "focalX": 50,
-    "focalY": 50
-  },
-  "sokePhoto": {
+  "beliefsPhoto": {
     "image": "",
     "alt": "",
     "focalX": 50,
@@ -58,13 +11,128 @@
     "focalX": 50,
     "focalY": 50
   },
+  "creativePhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "booksIntroduction": [
+    "Practical resources to help you examine your business, make informed decisions and apply what you learn.",
+    "Starting with Build Intelligently."
+  ],
+  "heroName": "Seamas Vincent",
+  "additionalSocialLinks": [],
   "aboutPhoto": {
     "image": "",
     "alt": "",
     "focalX": 50,
     "focalY": 50
   },
-  "creativePhoto": {
+  "teachingPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "introPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "missionIntroduction": [
+    "I believe entrepreneurship can help people build better lives, strengthen communities and contribute to the development of nations.",
+    "A business creates an opportunity for its founder. As it grows, it can create opportunities for employees, suppliers, partners and other businesses around it.",
+    "That possibility is what draws me to this work.",
+    "It is why I build. It is why I teach. And it is why I care deeply about how businesses grow."
+  ],
+  "aboutIntroduction": [
+    "I’m Seamas Vincent, a builder, business educator, speaker and creative based in Abuja, Nigeria.",
+    "Through SÓKÈ Africa, a professional services firm focused on go-to-market strategy and execution, I help companies enter new markets, reach new customers and expand their market share.",
+    "I also teach people how to approach entrepreneurship intelligently, through workshops, speaking, writing and the lessons I share from my own experience.",
+    "There have been a few lessons. Some were considerably more expensive than a course."
+  ],
+  "speakingHeroPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "speakingIntroduction": [
+    "I speak and teach about sustainable business growth, impactful business practices and the thinking behind how we build.",
+    "My perspective comes from starting businesses, making mistakes, learning from them and working directly with entrepreneurs through SỌKẸ Africa.",
+    "I bring those experiences into conference talks, practical workshops, panel conversations and company training, helping people examine their assumptions and make more informed business decisions."
+  ],
+  "aboutHeroPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "speakingEventPhotos": [],
+  "socialLinks": {
+    "instagram": "",
+    "linkedin": "",
+    "x": "",
+    "youtube": ""
+  },
+  "missionHeroPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "aboutPhotoGallery": [],
+  "booksHeroPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "heroHeadline": "A wider view of what we build.\nRaising the next generation of stewards.",
+  "heroRole": "Speaker · Author · Entrepreneur",
+  "missionImpactPhotos": [],
+  "homeAboutHeading": "A commercial mind. A creative perspective. An educator’s instinct.",
+  "workbookUrl": "https://selar.com/y870581q2e",
+  "contactHeroPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "heroPhoto": {
+    "image": "/uploads/chatgpt-image-sep-12-2026-03_52_33-am.png",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "evolvingPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "speakingWorkshopPhotos": [],
+  "sokeUrl": "https://sokeafrica.com/",
+  "contactIntroduction": [
+    "For collaborations, media requests and general enquiries, tell me what you have in mind."
+  ],
+  "responseTimeText": "3–5 business days",
+  "sokePhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "insightsHeroPhoto": {
+    "image": "",
+    "alt": "",
+    "focalX": 50,
+    "focalY": 50
+  },
+  "missionContributionPhotos": [],
+  "buildingPhoto": {
     "image": "",
     "alt": "",
     "focalX": 50,
@@ -76,21 +144,8 @@
     "focalX": 50,
     "focalY": 50
   },
-  "aboutHeroPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "speakingHeroPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "insightsHeroPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "booksHeroPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "contactHeroPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "evolvingPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "buildingPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "beliefsPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "teachingPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "missionHeroPhoto": { "image": "", "alt": "", "focalX": 50, "focalY": 50 },
-  "missionImpactPhotos": [],
-  "missionContributionPhotos": [],
-  "aboutPhotoGallery": [],
-  "speakingWorkshopPhotos": [],
-  "speakingEventPhotos": [],
-  "socialLinks": { "instagram": "", "linkedin": "", "x": "", "youtube": "" },
-  "additionalSocialLinks": []
+  "heroParagraphs": [
+    "A business carries more than its founder’s ambition. It carries livelihoods, opens doors and shapes what becomes possible for others.",
+    "I’m interested in the people we become as we build, the responsibility we carry, and what remains long after us."
+  ]
 }
