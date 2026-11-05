@@ -4,14 +4,15 @@ The site uses the existing Next.js 16 App Router project. Public pages are serve
 
 ## Browser editor
 
-The editor is available at `/admin` after deployment. It uses Decap CMS with GitHub as its content store. The source and editor have no CMS subscription charge. GitHub access, the OAuth host and the existing Vercel hosting account are still required; their costs depend on the accounts and usage selected.
+The editor is available at `/admin` after deployment. It uses Decap CMS with GitHub as its content store. The GitHub OAuth routes run in this Next.js app on the production site; no separate OAuth host is needed.
 
 Before sign-in can work:
 
-1. Connect this repository and its production branch to the existing Vercel project so CMS commits trigger a site build.
-2. `public/admin/config.yml` now uses the repository from `origin` (`SeamasVincent/my-site-`) and the local `main` branch. Set `base_url` to the actual HTTPS OAuth host before sign-in.
-3. Set up a GitHub OAuth application and an HTTPS OAuth host that supports Decap's GitHub backend. Set its callback URL to the callback endpoint supplied by that host and keep the client secret on the OAuth host, never in this repository or a browser bundle.
-4. Give the editor account write access to the repository. Visit `/admin` and sign in with that GitHub account.
+1. Connect this repository and its production branch (`main`) to the existing Vercel project so code pushes and CMS commits trigger production builds.
+2. Create a GitHub OAuth App with homepage `https://seamas.sokeafrica.com` and authorization callback URL `https://seamas.sokeafrica.com/api/decap/callback`.
+3. Add `GITHUB_OAUTH_CLIENT_ID` and `GITHUB_OAUTH_CLIENT_SECRET` to the Vercel project's Production environment. Keep the secret server-side; never use a `NEXT_PUBLIC_` prefix or commit its value.
+4. `public/admin/config.yml` uses the GitHub backend, repository `SeamasVincent/my-site-`, branch `main`, base URL `https://seamas.sokeafrica.com`, and auth endpoint `api/decap/auth`. The callback validates short-lived state and sends Decap's popup response only to `https://seamas.sokeafrica.com`.
+5. Give the editor's GitHub account write access to the repository, then visit `/admin` and sign in. This origin-locked flow is for production; preview deployment origins are not allowlisted.
 
 The editor supports draft/review/publish workflows, articles, videos and podcast entries, speaking experience, opening copy on the principal pages, homepage introduction fields, workbook and SỌKẸ links, response expectations, and labeled photo uploads. Photos are committed under `public/uploads`; crop focal points and alt text are stored with each image. Publishing merges the reviewed GitHub change, which starts the configured Vercel build. Photo and content changes appear after that build completes.
 

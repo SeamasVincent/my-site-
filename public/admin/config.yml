@@ -2,8 +2,8 @@ backend:
   name: github
   repo: SeamasVincent/my-site-
   branch: main
-  base_url: https://YOUR-OAUTH-HOST
-  auth_endpoint: auth
+  base_url: https://seamas.sokeafrica.com
+  auth_endpoint: api/decap/auth
   use_graphql: true
 publish_mode: editorial_workflow
 media_folder: public/uploads
