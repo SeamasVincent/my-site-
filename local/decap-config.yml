@@ -25,7 +25,8 @@ collections:
     summary: '{{type}} · {{title}}'
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Slug, name: slug, widget: string }
+      - { label: Slug, name: slug, widget: string, pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', 'Use lowercase letters and numbers separated by single hyphens.'], hint: 'Keep published slugs stable. Use a unique slug; append -2 for a duplicate. When changing a slug, add the old value to Previous slugs.' }
+      - { label: Visibility, name: status, widget: select, options: [published, draft], default: published }
       - { label: Previous slugs (for redirects), name: previousSlugs, widget: list, required: false }
       - { label: Content type, name: type, widget: select, options: [article, video, podcast] }
       - { label: Summary, name: summary, widget: text }
@@ -35,7 +36,17 @@ collections:
       - { label: Thumbnail focal Y (0–100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
       - { label: Published date, name: publishedAt, widget: datetime, time_format: false, required: false }
       - { label: Article body (full text; paragraphs separated by blank lines), name: body, widget: text, required: false }
-      - { label: YouTube or Spotify link, name: platformUrl, widget: string, required: false }
+      - label: Playback links (Video and Podcast)
+        name: playbackLinks
+        widget: list
+        required: false
+        summary: '{{fields.format}} on {{fields.platform}}'
+        hint: 'Add links in playback order. The first valid link is the card action. Podcasts can mix Watch and Listen. Articles ignore these links.'
+        fields:
+          - { label: Platform name, name: platform, widget: string }
+          - { label: HTTPS URL, name: url, widget: string, pattern: ['^https://[^/\s]+.*$', 'Enter an HTTPS URL.'] }
+          - { label: Format, name: format, widget: select, options: [Watch, Listen] }
+      - { label: Legacy playback URL (fallback), name: platformUrl, widget: string, required: false, hint: Used only when Playback links has no valid links. }
       - { label: Platform name, name: platformName, widget: string, required: false }
       - { label: Additional information, name: notes, widget: text, required: false }
       - label: Related links

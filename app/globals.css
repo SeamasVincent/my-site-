@@ -247,3 +247,5 @@ body { background:var(--alabaster); color:var(--ink); }
 .detail-image { position:relative; width:min(760px,calc(100% - 40px)); aspect-ratio:16/10; margin:0 auto 40px; overflow:hidden; background:var(--horizon); }
 @media(max-width:900px) { .resource-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:760px) { .editorial-gallery { width:calc(100% - 40px); margin:28px auto; } .editorial-gallery-grid,.resource-grid { grid-template-columns:1fr; gap:16px; } .resource-section { padding-top:60px; } .resource-card-copy { padding:21px; } }
+
+.insight-actions,.playback-links { display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin-top:20px; }.insight-actions .card-read { margin-top:0; }.insight-actions .button { font-size:11px; padding:12px 16px; }.playback-links { margin-bottom:24px; }
