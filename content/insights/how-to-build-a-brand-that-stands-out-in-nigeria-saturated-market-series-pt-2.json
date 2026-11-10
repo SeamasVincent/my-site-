@@ -1,14 +1,28 @@
 {
-  "publishedAt": "2026-11-09T00:00:00.000+01:00",
+  "publishedAt": "2026-11-10T00:00:00.000+01:00",
+  "body": "You can reverse-engineer a product. You can copy a pricing model. You cannot copy a feeling.\n\nIn Part 1 of the Everything Entrepreneurship Podcast Saturated Market series, we established that a crowded market is not a death sentence—it is proof of demand. But how do you actually stand out when 10 other businesses on your street are selling the exact same thing?\n\nMost founders think branding is picking a premium font and a nice logo. That is actually the final step.\n\nYour brand is the personality of your business. It is what people say about you when you are not in the room. More importantly, it is a commercial filter. It tells you what opportunities belong to you and which ones will dilute your market positioning.\n\nIn Part 2, Sharon Canu and I break down the exact framework to build a brand experience that cannot be copied. We cover:\n\nThe \"Only-ness\" Statement: Why your business exists beyond making money, and how to define the specific problem you solve in your market.\n\nAudience Segmentation: Why trying to sell to everyone guarantees you will sell to no one.\n\nThe Core Keywords: How to define the personality of your business so it dictates every single customer interaction.\n\nBrand Touchpoints: How to align your customer service, visual consistency, and product quality to match the exact image you are selling.\n\nIf you are building a business in Nigeria and want to stop competing purely on price, you need to engineer an experience that buys loyalty.",
   "summary": "Everyone is selling the same thing. Same products, same prices, same Instagram posts. So how do you actually get people to choose you?\n\nIn Part 2 of the Saturated Market Series, Seamas and Sharon break down what it really takes to build a brand that stands out in Nigeria — not just a logo or a colour palette, but the full experience that makes customers come back and tell their friends.\n",
   "slug": "how-to-build-a-brand-that-stands-out-in-nigeria",
+  "previousSlugs": [
+    "How To Build a Brand That Stands Out in Nigeria"
+  ],
+  "status": "published",
   "focalX": 50,
   "focalY": 50,
   "title": "How To Build a Brand That Stands Out in Nigeria | Saturated Market Series Pt 2",
-  "type": "video",
+  "type": "podcast",
   "image": "/uploads/eepodcast-yt-1-.png",
   "platformUrl": "https://youtu.be/gEYGn7V14qc?si=oIFJJ5sbOkiOiG2U",
-  "previousSlugs": [
-    "How To Build a Brand That Stands Out in Nigeria"
+  "playbackLinks": [
+    {
+      "platform": "Spotify ",
+      "url": "https://open.spotify.com/episode/2KJKIiuZDksiqDoRSZnPSn?si=e5e384a9b4d544ff",
+      "format": "Listen"
+    },
+    {
+      "url": "https://youtu.be/gEYGn7V14qc?si=rOLeSFGIEUTYWnpA",
+      "platform": "Youtube ",
+      "format": "Watch"
+    }
   ]
 }
