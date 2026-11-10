@@ -1,0 +1,47 @@
+{
+  "publication": {
+    "status": "published",
+    "featured": false,
+    "order": 100
+  },
+  "title": "Denovu ",
+  "slug": "denovu",
+  "basics": {
+    "organisation": "Denovu",
+    "description": "Fashion Brand ",
+    "role": "Co-founder & Marketing Lead",
+    "categories": [
+      "Entrepreneurship"
+    ],
+    "year": "2020",
+    "location": "Abuja"
+  },
+  "visuals": {
+    "cover": "/uploads/saveclip.app_654082950_18089524892239209_2141336445427800009_n.jpg",
+    "coverAlt": "denovu",
+    "gallery": [
+      {
+        "image": "/uploads/saveclip.app_662115105_18568119886009103_4236065958578866196_n.jpg",
+        "alt": "Shoes"
+      },
+      {
+        "image": "/uploads/screenshot_20260525-184242.jpg.jpeg",
+        "alt": "Durags"
+      },
+      {
+        "image": "/uploads/saveclip.app_655469513_18097727254802307_5693351894568567716_n.jpg",
+        "alt": "Shoes"
+      }
+    ]
+  },
+  "story": {
+    "overview": "A student-founded fashion and consumer brand that evolved from durag retail and local manufacturing into a broader footwear distribution model.",
+    "challenge": "DeNovu was my first entrepreneurial venture, launched in 2020.\n\nThe original business started in the durag market. We saw an opportunity to improve the products available to customers and began by reselling existing products before moving into local production.\n\nOver time, we developed our own products and built a distribution network across Nigerian universities. By the end of the first iteration, we had expanded into four or five universities and raised a six-figure investment to support the business's growth.\n\nThe first iteration eventually closed.\n\nIn 2023, I returned to the venture with a different approach. DeNovu 2.0 moved into footwear, applying lessons I had gained in marketing and distribution.\n\nThis time, I developed a multi-university distribution strategy, partnering with vendors and independent sellers in different locations to generate orders.\n\nHowever, the business struggled to fulfil the volume of demand generated, and that contributed to its eventual closure in 2024.",
+    "contribution": "As Co-founder and Marketing Lead, I was involved in building the business from inception, including:\n- Product and market development.\n- Marketing and customer acquisition.\n- Direct sales and relationship-led selling.\n- Distribution and vendor partnerships.\n- Customer relationships and fulfilment.\n- Commercial positioning and investor-facing materials.",
+    "results": "Generated six figures in revenue during the first year of the original business.\n\n\n\nBuilt a distribution network across multiple Nigerian universities.\n\n\n\nRaised six-figure investment to support the first iteration.\n\n\n\nTested a multi-location vendor and distribution model during the second iteration.",
+    "approach": "I built DeNovu through experimentation, direct market engagement and an evolving understanding of product and distribution.\n\nThe first iteration began with retailing durags. As we gained a better understanding of the market, we moved into local manufacturing, developing our own products and expanding distribution across multiple university communities.\n\nTo support this expansion, I developed a multi-university distribution approach and worked with vendors and distribution partners to make our products accessible to customers beyond our immediate location. I also explored investment opportunities and developed investor-facing materials to support the business's growth ambitions.\n\nIn its second iteration, DeNovu moved into footwear. I applied a similar approach to marketing and distribution, working with vendors and dropshipping partners across Nigeria to generate orders.\n\nHowever, as demand grew, our fulfilment capacity struggled to keep pace. This exposed an important gap between generating demand and building the operational capacity to satisfy it.",
+    "lessons": "DeNovu taught me that generating demand and building a sustainable business are two different challenges.\n\nIt showed me the importance of operational capacity, fulfilment planning, financial discipline and understanding the limits of a business model before scaling it.\n\nI would preserve that lesson in the case study. It gives the story substance."
+  },
+  "previousSlugs": [],
+  "savedSlug": "denovu"
+}
