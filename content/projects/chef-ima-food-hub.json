@@ -1,0 +1,47 @@
+{
+  "publication": {
+    "status": "published",
+    "featured": false,
+    "order": 100
+  },
+  "story": {
+    "approach": "My approach at Chef Ima was focused on making marketing more commercially effective.\n\nRather than treating marketing as an isolated promotional function, I worked on improving the relationship between customer acquisition, sales activities and repeat business.\n\nI restructured aspects of the sales and marketing operations, developed customer offers and retention packages, and implemented acquisition campaigns designed to attract new customers while encouraging existing customers to return.\n\nI also focused on making the business's marketing activities more intentional, ensuring that promotional efforts were connected to revenue generation and business performance.\n\nThis experience helped me develop a stronger understanding of marketing as a commercial function, rather than simply a communications or visibility tool.",
+    "overview": "Led and restructured marketing and customer acquisition activities for a growing food business, with a focus on improving sales performance, customer retention and profitability.",
+    "challenge": "Chef Ima was one of the engagements where I developed a stronger foundation in marketing as a professional discipline.\n\nMy work went beyond running campaigns. I examined the business's existing sales and marketing processes, identified weaknesses and helped restructure its commercial approach.\n\nThis included developing new customer offers, acquisition campaigns, messaging and retention initiatives.",
+    "contribution": "As Marketing Lead, I led:\n- Marketing strategy and brand positioning.\n- Customer acquisition campaigns.\n- Offer development.\n- Sales and marketing process improvements.\n- Customer retention and repeat-purchase initiatives.\n- Marketing execution and performance improvement.\n",
+    "results": "The revised commercial structure contributed to approximately 40% profit growth within six months, according to the business records referenced in your CV.",
+    "lessons": "Working at Chef Ima taught me that marketing is only one part of business growth.\n\nA company can attract attention and generate interest, but without a functioning sales process, a clear commercial model and the ability to convert opportunities into revenue, growth becomes difficult to sustain.\n\nI began to understand that scaling a business requires the different parts of its commercial operation to work together.\n\nThat lesson has remained central to how I think about business development and go-to-market execution today."
+  },
+  "title": "Chef Ima Food Hub",
+  "slug": "chef-ima",
+  "basics": {
+    "organisation": "Chef Ima Food Hub",
+    "description": "Growing Food Business",
+    "role": "Marketing Lead",
+    "categories": [
+      "Marketing & Commercial Growth"
+    ],
+    "year": "2023",
+    "location": "Abuja"
+  },
+  "visuals": {
+    "cover": "/uploads/pink-and-brown-aesthetic-minimalistic-candle-care-thank-you-card.png",
+    "coverAlt": "chef ima",
+    "gallery": [
+      {
+        "image": "/uploads/whatsapp-image-2025-09-18-at-15.47.03_ee28d018.jpg",
+        "alt": "food"
+      },
+      {
+        "image": "/uploads/whatsapp-image-2025-09-18-at-15.47.02_36317fce.jpg",
+        "alt": "food"
+      },
+      {
+        "image": "/uploads/ch.png",
+        "alt": "chop sticks"
+      }
+    ]
+  },
+  "previousSlugs": [],
+  "savedSlug": "chef-ima"
+}
