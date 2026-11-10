@@ -1,0 +1,49 @@
+{
+  "basics": {
+    "organisation": "Ura Mobile App",
+    "description": "Digital Commerce Platform",
+    "role": "Marketing & Operations Lead",
+    "categories": [
+      "Organisational Development"
+    ],
+    "year": "2025",
+    "location": "Abuja"
+  },
+  "slug": "ura",
+  "publication": {
+    "status": "published",
+    "featured": false,
+    "order": 100
+  },
+  "externalLinks": [
+    {
+      "label": "Join Ura",
+      "url": "https://www.ura.com.ng/"
+    }
+  ],
+  "previousSlugs": [],
+  "savedSlug": "ura",
+  "visuals": {
+    "cover": "/uploads/ura-brand-visual-04.png",
+    "coverAlt": "ura",
+    "gallery": [
+      {
+        "image": "/uploads/screenshot-2026-11-10-173338.png",
+        "alt": "log in"
+      },
+      {
+        "image": "/uploads/screenshot-2026-11-10-173409.png",
+        "alt": "use the platform"
+      }
+    ]
+  },
+  "story": {
+    "approach": "I initially joined URA to support its marketing efforts, but my involvement expanded after identifying operational gaps that were affecting the company's ability to execute.\n\nI took on a broader operations role, working to establish the structures, processes and internal systems needed to support the organisation. This included restructuring workflows, improving communication and introducing clearer operating rhythms and accountability across the team.\n\nOn the growth side, I focused on resource-efficient customer acquisition. Rather than relying on paid advertising, I used organic social media, direct outreach and relationship-led engagement to introduce the platform to businesses.\n\nI also worked with the team to coordinate these acquisition efforts with the company's operational readiness, helping build an initial business waitlist while strengthening the internal structures required to support growth.",
+    "overview": "Supporting the operational development and pre-launch market acquisition of a technology-enabled trust infrastructure platform for African commerce.",
+    "challenge": "I joined URA through Sókè Africa as a marketing professional.\n\nHowever, as I became more involved in the business, I recognised that some of its biggest challenges were not simply marketing challenges. There were significant operational gaps affecting how the organisation functioned and executed.\n\nI began working beyond the original marketing scope, helping to restructure internal operations, establish clearer systems and improve coordination across the team.\n\nAlongside this, I led organic acquisition efforts designed to build the platform's early business network.",
+    "contribution": "My work covered two major areas:\n- Operations: Developing internal workflows, communication structures, operating rhythms and accountability systems across a cross-functional team of approximately 10 people.\n- Growth: Leading organic acquisition initiatives through social media, direct outreach, personal networks and relationship-led engagement.",
+    "results": "Helped establish operating structures and coordination systems across a 10-person team.\n\n\n\nSupported the acquisition of over 200 businesses onto the platform's waitlist within six months.\n\n\n\nAchieved this acquisition milestone without paid advertising expenditure.\n\n\n\nSupported go-to-market execution during the company's pre-launch phase.",
+    "lessons": "URA reinforced the idea that meaningful progress does not always require significant financial resources.\n\nIt showed me how much can be achieved through better coordination, intentional systems, direct relationships and disciplined execution."
+  },
+  "title": "URA"
+}
