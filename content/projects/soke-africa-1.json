@@ -1,0 +1,39 @@
+{
+  "basics": {
+    "organisation": "Sókè Africa",
+    "description": "Business Development Firm",
+    "role": "Founder & Lead Strategist",
+    "categories": [
+      "Entrepreneurship"
+    ],
+    "year": "EST 2024",
+    "location": "ABUJA"
+  },
+  "slug": "soke-africa",
+  "publication": {
+    "status": "published",
+    "featured": false,
+    "order": 100
+  },
+  "externalLinks": [
+    {
+      "label": "Our Services",
+      "url": "https://services.sokeafrica.com/"
+    }
+  ],
+  "previousSlugs": [],
+  "savedSlug": "soke-africa",
+  "visuals": {
+    "cover": "/uploads/bvn.png",
+    "coverAlt": "Soke Africa"
+  },
+  "story": {
+    "overview": "Building a go-to-market and business development firm focused on helping organisations translate promising ideas, products and business models into commercially viable, operational businesses.",
+    "challenge": "Sókè Africa was founded in response to a gap I observed in the Nigerian business environment. Many founders had promising ideas, products and ambitions, but struggled to bridge the gap between having a business concept and building an established, functioning institution.\n\nI wanted to help close that gap.\n\nI have always been interested in the role businesses play in creating opportunities. A successful business does not just serve its customers; it can create employment, develop talent, support suppliers and open doors for entire communities.\n\nThat conviction led me towards professional services: applying my knowledge and capabilities to help founders and organisations build, grow and commercialise their businesses.",
+    "contribution": "As Founder and Lead Strategist, my responsibilities span two major areas:\n- Business leadership: Strategic oversight, financial management, internal structures, team development and the general running of the company.\n- Client strategy and execution: Leading strategy across client engagements, particularly marketing and go-to-market strategy, while coordinating teams responsible for execution.",
+    "approach": "I approached Sókè Africa as more than a service business. I wanted to build an organisation capable of helping businesses move from promising ideas and products to commercially viable, well-positioned businesses.\n\nMy approach has been to combine strategic thinking with practical execution. I work closely with clients to understand their business objectives, identify commercial gaps, develop go-to-market strategies and translate those strategies into actionable plans.\n\nInternally, I've focused on building the structures and people needed to deliver this work consistently. This includes developing our team, overseeing financial and operational decisions, managing client relationships and coordinating cross-functional execution across different engagements.\n\nRather than positioning strategy as a standalone deliverable, I work with the team to ensure that recommendations translate into actual business activity.",
+    "results": "Built a cross-functional delivery network of approximately 15 professionals, including strategists, marketers, designers and developers.\n\n\n\nManaged between five and seven concurrent client engagements across different industries.\n\n\n\nGenerated 1,045 qualified leads for a health-tech client from ₦300,000 in media spend.\n\n\n\nDeveloped an organic acquisition strategy that helped a technology platform onboard over 200 businesses in one quarter, with zero advertising spend.\n\n\n\nDeveloped go-to-market plans, commercial proposals and investor-facing materials for client organisations",
+    "lessons": "One of the biggest lessons from building Sókè has been learning to pace myself.\n\nEarlier entrepreneurial experiences made me inclined to move quickly. Sókè has reinforced the importance of building steadily, strengthening the foundations and allowing an organisation to mature.\n\nTwo years into the journey, the lesson is not to abandon ambition, but to build at a pace that allows the business to become stronger over time."
+  },
+  "title": "Sókè Africa"
+}
