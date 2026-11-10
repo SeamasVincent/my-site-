@@ -4,7 +4,7 @@ import { HeroBackground } from './site-client';
 import settings from '../../content/site-settings.json';
 
 type PhotoKey = keyof typeof settings;
-export const pages = [['About','/about'],['Mission','/mission'],['Speaking','/speaking'],['Insights','/insights'],['Resources','/books'],['Contact','/contact']] as const;
+export const pages = [['About','/about'],['Mission','/mission'],['Speaking','/speaking'],['Insights','/insights'],['Selected Work','/work'],['Resources','/books'],['Contact','/contact']] as const;
 function safeHttps(value: string) { try { return new URL(value).protocol === 'https:'; } catch { return false; } }
 
 export function Footer() {

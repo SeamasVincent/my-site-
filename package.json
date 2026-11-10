@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:insights": "node --test tests/insights.test.mjs"
+    "test:insights": "node --test tests/insights.test.mjs",
+    "test:content": "node --test tests/insights.test.mjs tests/dates.test.mjs tests/projects.test.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.40.0",
     "next": "16.2.9",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

@@ -9,7 +9,7 @@ import settings from '../../content/site-settings.json';
 
 const pages = [
   ['Home', '/'], ['About', '/about'], ['Mission', '/mission'], ['Speaking', '/speaking'], ['Insights', '/insights'],
-  ['Resources', '/books'], ['Contact', '/contact'],
+  ['Selected Work', '/work'], ['Resources', '/books'], ['Contact', '/contact'],
 ] as const;
 
 export function Header() {
@@ -18,7 +18,7 @@ export function Header() {
   return <header className="site-header"><div className="nav-wrap">
     <Link className="wordmark" href="/" aria-label="Seamas Vincent home"><Image src="/logo.svg" alt="Seamas Vincent" width={570} height={125} priority /></Link>
     <button className="menu-toggle" aria-expanded={open} aria-controls="site-navigation" onClick={() => setOpen(!open)}>{open ? 'Close' : 'Menu'}</button>
-    <nav id="site-navigation" className={open ? 'nav-links nav-open' : 'nav-links'} aria-label="Main navigation">{pages.map(([label, href]) => <Link key={href} href={href} aria-current={pathname === href ? 'page' : undefined} onClick={() => setOpen(false)}>{label}</Link>)}</nav>
+    <nav id="site-navigation" className={open ? 'nav-links nav-open' : 'nav-links'} aria-label="Main navigation">{pages.map(([label, href]) => <Link key={href} href={href} aria-current={pathname === href || (href !== '/' && pathname.startsWith(`${href}/`)) ? 'page' : undefined} onClick={() => setOpen(false)}>{label}</Link>)}</nav>
   </div></header>;
 }
 

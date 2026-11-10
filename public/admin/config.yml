@@ -35,13 +35,13 @@ collections:
       - { label: Thumbnail focal X (0–100), name: focalX, widget: number, value_type: int, min: 0, max: 100, default: 50 }
       - { label: Thumbnail focal Y (0–100), name: focalY, widget: number, value_type: int, min: 0, max: 100, default: 50 }
       - { label: Published date, name: publishedAt, widget: datetime, time_format: false, required: false }
-      - { label: Article body (full text; paragraphs separated by blank lines), name: body, widget: text, required: false }
+      - { label: Episode article / Article body, name: body, widget: markdown, required: false }
       - label: Playback links (Video and Podcast)
         name: playbackLinks
         widget: list
         required: false
         summary: '{{fields.format}} on {{fields.platform}}'
-        hint: 'Add links in playback order. The first valid link is the card action. Podcasts can mix Watch and Listen. Articles ignore these links.'
+        hint: 'Add links in playback order. All valid links appear on the card. Podcasts can mix Watch and Listen. Articles ignore these links.'
         fields:
           - { label: Platform name, name: platform, widget: string }
           - { label: HTTPS URL, name: url, widget: string, pattern: ['^https://[^/\s]+.*$', 'Enter an HTTPS URL.'] }
@@ -56,6 +56,248 @@ collections:
         fields:
           - { label: Label, name: label, widget: string }
           - { label: URL (HTTPS), name: url, widget: string }
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
+    create: true
+    delete: true
+    extension: json
+    format: json
+    slug: '{{slug}}'
+    summary: '{{title}} ? {{publication.status}}'
+    preview_path: work/{{slug}}
+    sortable_fields:
+      - title
+      - publication.order
+      - publication.status
+    view_filters:
+      - label: Published
+        field: publication.status
+        pattern: published
+      - label: Drafts
+        field: publication.status
+        pattern: draft
+      - label: Archived
+        field: publication.status
+        pattern: archived
+      - label: Hidden
+        field: publication.status
+        pattern: hidden
+      - label: Featured
+        field: publication.featured
+        pattern: true
+    fields:
+      - name: title
+        label: Project title
+        widget: string
+      - name: slug
+        label: Public URL slug
+        widget: string
+        pattern:
+          - ^[a-z0-9]+(-[a-z0-9]+)*$
+          - Use lowercase letters and numbers separated by hyphens.
+        hint: >-
+          Must be unique, including draft and archived projects. Previous saved slugs are retained automatically.
+          Duplicating a project requires a new slug and cleared previous slugs / saved slug.
+      - name: previousSlugs
+        label: Previous slugs (redirects)
+        widget: list
+        required: false
+      - name: savedSlug
+        label: Redirect tracking slug
+        widget: string
+        hint: Managed automatically on save. Clear this and Previous slugs when duplicating a project.
+        required: false
+      - name: basics
+        label: Project basics
+        widget: object
+        fields:
+          - name: organisation
+            label: Organisation
+            widget: string
+            required: false
+          - name: description
+            label: Short description
+            widget: text
+            required: false
+          - name: role
+            label: My role
+            widget: string
+            required: false
+          - name: categories
+            label: Categories
+            widget: list
+            required: false
+            min: 1
+          - name: year
+            label: Year
+            widget: string
+            required: false
+          - name: startDate
+            label: Engagement start
+            widget: datetime
+            required: false
+            time_format: false
+          - name: endDate
+            label: Engagement end
+            widget: datetime
+            required: false
+            time_format: false
+          - name: location
+            label: Location
+            widget: string
+            required: false
+      - name: visuals
+        label: Visuals
+        widget: object
+        fields:
+          - name: cover
+            label: Cover image
+            widget: image
+            required: false
+          - name: coverAlt
+            label: Cover alternative text
+            widget: string
+            required: false
+          - name: gallery
+            label: Gallery
+            widget: list
+            required: false
+            fields:
+              - name: image
+                label: Image
+                widget: image
+              - name: alt
+                label: Alternative text
+                widget: string
+              - name: caption
+                label: Caption
+                widget: string
+                required: false
+      - name: story
+        label: Case study
+        widget: object
+        fields:
+          - name: overview
+            label: Overview
+            widget: markdown
+            required: false
+          - name: challenge
+            label: Challenge
+            widget: markdown
+            required: false
+          - name: contribution
+            label: My contribution
+            widget: markdown
+            required: false
+            hint: Describe your personal responsibilities and decisions. Credit collaborators separately.
+          - name: approach
+            label: Approach and execution
+            widget: markdown
+            required: false
+          - name: results
+            label: Results
+            widget: markdown
+            required: false
+            hint: Identify team outcomes and explain your contribution without claiming sole credit.
+          - name: lessons
+            label: Lessons
+            widget: markdown
+            required: false
+      - name: metrics
+        label: Metrics
+        widget: list
+        required: false
+        fields:
+          - name: value
+            label: Value
+            widget: string
+          - name: label
+            label: Metric
+            widget: string
+          - name: context
+            label: Context and attribution
+            widget: text
+            hint: Include timeframe, source, baseline and whether this was a team outcome.
+      - name: testimonial
+        label: Testimonial
+        widget: object
+        fields:
+          - name: quote
+            label: Quote
+            widget: text
+            required: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+          - name: attribution
+            label: Role / organisation
+            widget: string
+            required: false
+        required: false
+      - name: externalLinks
+        label: External links
+        widget: list
+        required: false
+        fields:
+          - name: label
+            label: Label
+            widget: string
+          - name: url
+            label: HTTPS URL
+            widget: string
+            pattern:
+              - ^https://[^/\s]+.*$
+              - Enter an HTTPS URL.
+      - name: publication
+        label: Publication settings
+        widget: object
+        fields:
+          - name: status
+            label: Visibility
+            widget: select
+            options:
+              - draft
+              - published
+              - hidden
+              - archived
+            default: draft
+            hint: >-
+              Only published projects appear publicly. Set published before the final editorial Publish action; hidden and
+              archived entries return 404.
+          - name: featured
+            label: Featured
+            widget: boolean
+            default: false
+          - name: order
+            label: Manual order
+            widget: number
+            value_type: int
+            default: 100
+            min: 0
+            hint: Featured work appears first; lower numbers appear first within each group.
+      - name: seo
+        label: SEO
+        widget: object
+        fields:
+          - name: title
+            label: SEO title
+            widget: string
+            required: false
+            hint: Defaults to the project title.
+          - name: description
+            label: SEO description
+            widget: text
+            required: false
+            hint: Defaults to the short description.
+          - name: image
+            label: Social image
+            widget: image
+            required: false
+            hint: Defaults to the cover.
+        required: false
   - name: resources
     label: Resources
     label_singular: Resource
